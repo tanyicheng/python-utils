@@ -1,0 +1,10 @@
+user: admin
+pwd: 123
+job:
+  - teacher
+  - nurese
+
+school: erxiao
+studens:
+- lili
+- jj

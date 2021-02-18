@@ -1,0 +1,5 @@
+Sunday, 07 February 2021 16:37:11[line:11] DEBUG Debug状态
+Sunday, 07 February 2021 16:37:11[line:12] INFO 输入状态
+Sunday, 07 February 2021 16:37:11[line:13] WARNING 警告级别错误
+Sunday, 07 February 2021 16:37:11[line:14] ERROR 产生错误信息
+Sunday, 07 February 2021 16:37:11[line:15] CRITICAL 产生严重错误
