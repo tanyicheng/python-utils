@@ -1,0 +1,16 @@
+[db]
+ip=192.168.91.100
+port=3306
+database=jeecg-boot
+username=root
+password=123456
+
+[config]
+mysql_home=D:/mysql-5.7.21-winx64/bin/
+sql_back_home=D:/sqlback
+
+[ftp]
+ip=127.0.0.1
+port=21
+username=dbback
+password=
