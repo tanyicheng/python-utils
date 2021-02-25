@@ -74,6 +74,7 @@ class GetMysqlTableComments():
             # sqlstr += '\n-- ' + tabledata[1] + '\n'
             if return_columns != '':
                 sqlstr += tabledata[0] + '\n'
+                # sqlstr += 'select\n' + return_columns + '\n from ' + tabledata[0] + ';\n'
 
         return sqlstr
 
@@ -86,11 +87,13 @@ class GetMysqlTableComments():
         columnstr = ''
         flag = 0;
         for columndata in return_columns:
-            # 列名加上`是为了防止列名使用了mysql关键字时会报sql语法错误
-            columnstr += columndata[0]
-            columnstr += ',\n'
-            if columndata[0] == str:
+            # 列名是否包含str
+            if str in columndata[0]:
+                # 列名加上`是为了防止列名使用了mysql关键字时会报sql语法错误
+                columnstr += columndata[0]
+                columnstr += ',\n'
                 flag = 1
+                break
 
         if flag == 1:
             return columnstr
@@ -118,7 +121,7 @@ if __name__ == '__main__':
     # 根据表获取结构和注释
     # sqlstr = my_database.get_columns('sys_user')
 
-    sqlstr = my_database.filter_tables(database,'tenant_id')
+    sqlstr = my_database.filter_tables(database,'tenant')
 
     my_database.closedb()
     # 生成的sql打印到控制台
