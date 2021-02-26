@@ -40,3 +40,7 @@ def test():
 
 go()
 # test()
+
+
+# 返回结果
+# {'msg': '评论成功', 'data': {'id': 4986985, 'parentId': None, 'activityId': 900980, 'photoId': None, 'content': '风华十载 逐光启航', 'mediaType': 0, 'mediaPath': None, 'mediaUrl': None, 'mediaWidth': None, 'mediaHeight': None, 'duration': None, 'userId': 11395791, 'parentUserId': None, 'nickname': 'Barrett', 'avatar': 'https://thirdwx.qlogo.cn/mmopen/vi_32/y9BpzvIMpwdAnXprR2GZHeicdXhUnKiaj6UF29GlIiaTAtQ5UibBSiaS9K8ibK06gVsTOvy6lgrgpMlm2hB8JuZEt6ow/132', 'check': 2, 'deviceid': None, 'ip': '222.188.229.109', 'verifyCode': None, 'avatarUrl': 'https://thirdwx.qlogo.cn/mmopen/vi_32/y9BpzvIMpwdAnXprR2GZHeicdXhUnKiaj6UF29GlIiaTAtQ5UibBSiaS9K8ibK06gVsTOvy6lgrgpMlm2hB8JuZEt6ow/132', 'activityTitle': None, 'likeNum': None, 'photoLive': 0, 'parentComment': None, 'blackNum': None, 'type': None, 'activityPhoto': None, 'redPacketStatus': None, 'redPacketViewStatus': None, 'redPacketGetStatus': None, 'officialFlag': 0, 'openId': None, 'videoReplayTime': None, 'ctime': 1614342198710, 'liked': False}, 'code': 0}
