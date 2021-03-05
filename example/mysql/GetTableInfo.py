@@ -127,6 +127,6 @@ if __name__ == '__main__':
     # 生成的sql打印到控制台
     print(sqlstr)
     # 生成的sql保存到文件
-    file_path = 'table.sql'
+    file_path = 'sql/table.sql'
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(sqlstr)

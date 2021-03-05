@@ -6,7 +6,7 @@ from fabric.api import *
 
 # 指定环境
 env.hosts = ['root@47.98.189.194:22']
-env.password = 'Tfq.123456'
+env.password = ''
 
 
 # 远程执行命令

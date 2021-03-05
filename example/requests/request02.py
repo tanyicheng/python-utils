@@ -4,16 +4,17 @@ import json
 arr = ['S1561', 'S1577', 'S1172', 'S0028', 'S1174', 'S1472', 'S1617']
 
 
+cookie = 'SESSION=OTg5MDNkMzItYTY2MC00ZDcxLTgyNmItMGFmMjIzM2FlNWI4'
 # 自动发弹幕
 # https://m.inmuu.com/v1/live/news/900980/intro
 def go():
-    for num in range(0, 10):
+    for num in range(0, 1000):
         ret = requests.post(url='https://m.inmuu.com/v1/srv/comment',
                             json={"activityId": "900980",
                                   "content": "风华十载 逐光启航",
                                   "mediaType": 0
                                   },
-                            headers={'cookie': 'SESSION=ZGQyYWFhMzctNTkzMS00NjExLWExMjItMDdmOGU1YjlmY2U1'}
+                            headers={'cookie': cookie}
                             )
         print(ret.json())
 
@@ -27,7 +28,7 @@ def goFor():
                                       "content": arr[i] + " 风华十载 逐光启航",
                                       "mediaType": 0
                                       },
-                                headers={'cookie': 'SESSION=ZGQyYWFhMzctNTkzMS00NjExLWExMjItMDdmOGU1YjlmY2U1'}
+                                headers={'cookie': cookie}
                                 )
             print(ret.json())
 

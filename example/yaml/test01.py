@@ -15,6 +15,8 @@ class YamlTest:
         # 将数据转换成python字典行驶输出，存在多个文件时，用load_all，单个的时候load就可以
         d = yaml.load(cfg)
         print(d)
+        print(d.get('user'))
+        print(d.get('job')[0])
 
     # 写入
     def write(self, path, type):
@@ -33,9 +35,9 @@ class YamlTest:
 
 a = YamlTest()
 
-# a.read()
+a.read()
 # a 追加内容，w 覆盖
 # a.write('config.yaml', 'a')
 
 
-a.create_yaml()
+# a.create_yaml()

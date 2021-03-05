@@ -1,8 +1,18 @@
 from fabric.api import *
+import yaml
 
-# 全局变量
-env.hosts = ['root@47.98.189.194:22']
-env.password = 'Tfq.123456'
+# 读取配置信息
+f = open('conf/ser32.yaml', 'r', encoding='utf-8')
+cfg = f.read()
+d = yaml.load(cfg)
+hosts = d.get('linux').get('hosts')
+password = d.get('linux').get('password')
+
+# 全局变量 root@192.168.91.100:22
+env.hosts = [hosts]
+# env.password = password
+#使用证书登录
+env.key_filename ='D:\\0-seraphim\\1seraphim-证书'
 
 
 @runs_once  # 函数装饰器，标识的函数只会执行一次，不受多台主机影响
@@ -21,4 +31,5 @@ def go():
     workask(getdirname)
     print('---结束---')
 
-# >fab -f fabric01.py
+# >fab -f fabric01.py workask
+

@@ -4,7 +4,7 @@ from fabric.api import *
 
 # 全局变量
 env.hosts = ['root@47.98.189.194:22']
-env.password = 'Tfq.123456'
+env.password = ''
 
 path = '/home/itcast/testdemo'
 
