@@ -16,13 +16,17 @@ def read():
         print(result_row)
 
 
+
+# 遍历sheet页
 def read2():
+    # 当前的sheet页
     sheet_g = ''
     # 遍历所有表
     for sheet in wb:
-        print(sheet.title)
+        print("sheet名称："+sheet.title)
         sheet_g = sheet
 
+    # 这里遍历的最后一页
     for row in sheet_g.rows:
         result_row = []
         for cell in row:
