@@ -5,10 +5,11 @@ import os
 from openpyxl.drawing.image import Image
 from openpyxl.utils import get_column_letter
 
-path = 'D:/0-seraphim/1需求/表格2/'
+# Excel 数据合并
+path = 'D:/0-seraphim/1需求/表格9/'
 fileNames = os.listdir(path)
-# 设置文件名
-addr = "example.xlsx"
+# 导出的文件名
+addr = "example_9.xlsx"
 # 创建文件
 c_wb = Workbook()
 total = len(fileNames)
@@ -67,8 +68,8 @@ def readCell(fileName, num):
             val = sheet.cell(i, 3).value
             barcodes.append(val)
 
-    except:
-        print('出现异常')
+    except Exception as e:
+        print('出现异常',e)
 
     create(orderNumber, containerNo, barcodes, num)
 
@@ -130,13 +131,13 @@ def insertImage(sheet):
     # fileName = os.path.join(os.getcwd(), './img.png')
     # img = Image.open(path).convert("RGB")
     # sheet.add_image(fileName , 'E1')
-    img = Image('./img.png')
+    img = Image('./logo.png')
     img.width, img.height = 830, 135
     sheet.add_image(img, 'E1')
 
 
 def image():
-    img = Image('./img.png')
+    img = Image('./logo.png')
     img.width, img.height = 830, 140
 
 

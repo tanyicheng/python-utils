@@ -10,7 +10,7 @@ env.password = '123456'
 
 currentTime = time.strftime("%Y%m%d%H%M%S", time.localtime())
 # 备份数据库且下载的本地
-database_path = '/home/backup/jeecg-boot' + currentTime + '.sql'
+database_path = '/home/backup/snipe-boot' + currentTime + '.sql'
 # TODO jeecg 系统数据备份
 # local_path = 'D:\1_sql\backup'
 local_path = 'D:\git\my_study\jeecg-boot\jeecg-boot\db'
@@ -26,7 +26,7 @@ def download():
 def mysql_bak():
     # result = run('mysqldump -u root -p123456 jeecg-boot > /home/jeecg-boot.sql')
     # result = run('docker exec -it mysql mysqldump -uroot -p123456 -h127.0.0.1 -P3306 --databases jeecg-boot > ' + database_path)
-    result = run('docker exec -it mysql mysqldump -uroot -p123456 jeecg-boot > ' + database_path)
+    result = run('docker exec -it mysql mysqldump -uroot -p123456 snipe-boot > ' + database_path)
     print("result：" + result)
 
 # linux 测试可行
