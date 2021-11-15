@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLineEdit, QLabel, QPushButton, QVBoxLayout
-from example.openpyxl.example.main import work
+from excelSummary import work
 
 # 简单的输入+按钮 窗口
 class Example(QWidget):
@@ -57,3 +57,8 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     ex = Example()
     sys.exit(app.exec_())
+
+# 打包
+# pyinstaller.exe -F -w demo3.py
+
+# D:/0-seraphim/1需求/表格9
