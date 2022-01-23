@@ -1,7 +1,8 @@
 from PIL import Image
-
+# 如果PIL没有，改为 pip3 install Pillow
+# 图像旋转
 def readImg():
-    #读取图像
+    # 读取图像
     im = Image.open("power.png")
     # 上下、左右翻转；逆时针90、180、270等角度的旋转
     out = im.transpose(Image.FLIP_LEFT_RIGHT)
@@ -13,7 +14,6 @@ def readImg():
     out.save('newImg.png')
     # out.show();
     # im.show()
-
 
 
 readImg()

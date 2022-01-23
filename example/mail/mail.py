@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import yagmail
 
 # 链接邮箱服务器  （邮箱地址,授权码，主机地址）
@@ -9,7 +11,7 @@ contents = ['This is the body, and here is just text http://somedomain/image.png
 
 # 发送邮件
 yag.send(
-    to=['65797706@qq.com', 'yuejiao.xu@seraphim-energy.com'],  # 如果多个收件人的话，写成list就行了，如果只是一个账号，就直接写字符串就行to='123@qq.com'
+    to=['65797706@qq.com'],  # 如果多个收件人的话，写成list就行了，如果只是一个账号，就直接写字符串就行to='123@qq.com'
     cc='yicheng.tan@seraphim-energy.com',  # 抄送
     subject='学习发送邮件',  # 邮件标题
     contents='你好，你今天开心吗？',  # 邮件正文

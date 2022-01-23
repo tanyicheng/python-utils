@@ -1,6 +1,7 @@
 import fire
 
-#fire是python中用于生成命令行界面(Command Line Interfaces, CLIs)的工具，不需要做任何额外的工作，只需要从主模块中调用fire.Fire()，
+
+# fire是python中用于生成命令行界面(Command Line Interfaces, CLIs)的工具，不需要做任何额外的工作，只需要从主模块中调用fire.Fire()，
 # 它会自动将你的代码转化为CLI，Fire()的参数可以说任何的python对象
 class Calculator:
     def add(self, a, b):
@@ -23,4 +24,4 @@ if __name__ == '__main__':
     # 指定类对象
     fire.Fire(Calculator)
 
-# > test01.py add 8 6
+# > python3 test01.py add 7 8
