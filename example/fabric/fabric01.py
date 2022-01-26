@@ -6,13 +6,11 @@
 from fabric.api import *
 
 # 指定环境
-env.hosts = ['root@47.98.189.194:22']
-env.password = ''
+env.hosts = ['root@47.111.28.8:22']
+env.password = 'Q1qaz2wsx'
 
 
 # 远程执行命令
-
-
 def task1():
     print("hello")
 

@@ -1,7 +1,10 @@
 # 记录python学习 & 实用工具
 
 python 3.8
-
+```
+    指定解释器
+    #!/usr/bin/env python3
+```
 * redis:用于连接redis获取信息
 * fire:用于处理命令行参数
 * yaml:用于处理yaml配置文件
@@ -15,3 +18,5 @@ python 3.8
 * openpyxl:用于读取release.xlsx文件，tag的内容读取
 * PIL：图片处理  
   如果PIL下载失败，手动下载 pip3 install Pillow
+* gui可视化编程：pip install wxPython
+* 
