@@ -42,3 +42,13 @@ def do():
 # >fab -f fabric01.py deploy 或 execute(deploy)
 # execute(download)
 execute(do)
+
+# TODO Mac 下手动执行
+# docker exec -it mysql5.7  bash
+# mysqldump -u root -p123456 snipe-boot > /home/snipe-boot20220510.sql
+# docker cp mysql5.7:/home/snipe-boot20220510.sql /Users/snipe/Documents/tan/git/project/jeecg-boot/jeecg-boot/db
+
+# docker exec -it w.mysql  bash
+# mysqldump -u root -p123456 jeecg-boot > /home/jeecg-boot221007.sql
+# 导出成功后退出，在主机执行拷贝命令，从docker复制到本机
+# docker cp mysql5.7:/home/jeecg-boot221007.sql /Users/snipe/Documents/tan/git/project/jeecg-boot/jeecg-boot/db
