@@ -37,4 +37,4 @@ redis = RedisConnect('172.16.8.63', 6379, 'redis@2019')
 # redis.set_data("abc", '阿斯蒂芬')
 # redis.get_data('abc')
 
-redis.del_all()
+# redis.del_all()

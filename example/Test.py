@@ -1,0 +1,5 @@
+
+
+DATA = b'\xe6\x88\x91\xe7\x88\xb1\xe4\xbd\xa0'
+DATA = str(DATA,'utf-8')
+print(DATA)
